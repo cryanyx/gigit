@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Gig It</title>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="style.css">	
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+        
+	</head>
+	
+	<body>
+        <div id="sticky-nav">
+            <ul class="navbar">
+                <li><a class="home" href="index.html">GIG IT</a></li> 
+                <li><a class="nav" href="#"><i class="fa fa-2x fa-search"></i></a></li>
+                <li><a class="nav" href="discover.html"><i class="fa fa-2x fa-globe"></i></a></li>
+                <li><a class="nav" href="#"><i class="fa fa-2x fa-paper-plane-o"></i></a></li>
+                <li><a class="nav" href="profile.html"><i class="fa fa-2x fa-user"></i></a></li>
+            </ul>
+        </div>
+         
+        <div class="index-main">
+            <ul class="notifications">
+                <li>
+                    <h3>HOZIER  </h3><p class="small-text">started following you</p>
+                    <span class="close">&times;</span>
+                </li>
+            </ul>
+            <ul class="notifications">
+                <li>
+                    <p class="small-text">You have a new message from</p><h3>  CONNAL</h3>
+                    <span class="close">&times;</span>
+                </li>
+            </ul>
+            <ul class="notifications">
+                <li>
+                    <h3>SHAKALAK  </h3><p class="small-text">started following you</p>
+                    <span class="close">&times;</span>
+                </li>
+            </ul>
+        </div>
+            
+            <div class="discover">
+                <img src="resources/discover.jpg" width="100%">
+                <div class="discover-overlay">
+                    <a class="dashboard" href="discover.html"><i class="fa fa-2x fa-globe"></i>
+                    <p>DISCOVER</p></a>
+                </div>
+            </div>
+            
+            <div class="dashboard-profile">
+                <img src="resources/musician.jpg" width="100%">
+                <div class="profile-overlay">
+                    <a class="dashboard" href="profile.html"><p>PROFILE</p></a>
+                </div>
+            </div>
+
+            <div class="add-tracks">
+                <img src="resources/add-track.svg" width="80px">
+            </div>
+    
+    <footer>
+        <a class="sign-out" href="login.html">sign out</a>
+        <br>&copy; 2021
+    </footer>
+
+    </body>
+
+<script>
+        var closebtns = document.getElementsByClassName("close");
+        var i;
+        
+        for (i = 0; i < closebtns.length; i++) {
+          closebtns[i].addEventListener("click", function() {
+            this.parentElement.style.display = 'none';
+          });
+        }
+</script>
